@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </androidx.core.widget.NestedScrollView>
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btn_log_out"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Log Out"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:layout_gravity="center|bottom"/>-->
+   <androidx.coordinatorlayout.widget.CoordinatorLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <com.google.android.material.bottomappbar.BottomAppBar
+           android:id="@+id/bottomAppBar"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom"
+           app:fabCradleMargin="20dp"
+           app:fabCradleRoundedCornerRadius="20dp"
+           app:fabCradleVerticalOffset="10dp"
+           >
+
+           <com.google.android.material.bottomnavigation.BottomNavigationView
+               android:id="@+id/bottomNavigationView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginEnd="16dp"
+               android:background="@android:color/transparent"
+               app:menu="@menu/bottom_nav_menu" />
+       </com.google.android.material.bottomappbar.BottomAppBar>
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fab"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_add"
+           app:layout_anchor="@id/bottomAppBar"
+           tools:ignore="SpeakableTextPresentCheck" />
+
+   </androidx.coordinatorlayout.widget.CoordinatorLayout>
+<!--    <fragment-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="673dp"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:layout/>-->
+</FrameLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1003567142029",
+    "project_id": "e-shop-afd35",
+    "storage_bucket": "e-shop-afd35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003567142029:android:79f49464d4caba64913ec4",
+        "android_client_info": {
+          "package_name": "com.example.e_shoes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003567142029-34b58kumns6no385tddjb3niekrunnjn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmW75RWrnZs6Ng5StnimoB0OOk7TNEoCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003567142029-34b58kumns6no385tddjb3niekrunnjn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
